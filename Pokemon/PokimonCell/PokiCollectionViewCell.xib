@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokiCollectionViewCell" id="gTV-IL-0wX" customClass="PokiCollectionViewCell" customModule="Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-68-8p9">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b6B-gs-6s1">
+                                <rect key="frame" x="8" y="9" width="112" height="58"/>
+                                <color key="tintColor" red="0.066666662690000003" green="0.066666662690000003" blue="0.054901964960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-wZ-7dV">
+                                <rect key="frame" x="0.0" y="85" width="128" height="43"/>
+                                <color key="backgroundColor" red="0.96470588450000005" green="0.8156862855" blue="0.87450981139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b6B-gs-6s1" firstAttribute="top" secondItem="n2W-68-8p9" secondAttribute="top" constant="8" id="0gd-7g-oqy"/>
+                            <constraint firstItem="b6B-gs-6s1" firstAttribute="leading" secondItem="n2W-68-8p9" secondAttribute="leading" constant="8" id="3PC-Zx-wzw"/>
+                            <constraint firstItem="Drc-wZ-7dV" firstAttribute="leading" secondItem="n2W-68-8p9" secondAttribute="leading" id="6dy-Q7-cq9"/>
+                            <constraint firstAttribute="bottom" secondItem="b6B-gs-6s1" secondAttribute="bottom" constant="59.5" id="8zQ-uR-Xwg"/>
+                            <constraint firstItem="Drc-wZ-7dV" firstAttribute="top" secondItem="b6B-gs-6s1" secondAttribute="bottom" constant="16.5" id="AN4-WV-RXq"/>
+                            <constraint firstItem="b6B-gs-6s1" firstAttribute="leading" secondItem="n2W-68-8p9" secondAttribute="leading" constant="8" id="D63-IA-9aW"/>
+                            <constraint firstItem="Drc-wZ-7dV" firstAttribute="top" secondItem="b6B-gs-6s1" secondAttribute="bottom" constant="16.5" id="T3E-oB-Uns"/>
+                            <constraint firstAttribute="trailing" secondItem="Drc-wZ-7dV" secondAttribute="trailing" id="VET-Xj-Oia"/>
+                            <constraint firstAttribute="trailing" secondItem="b6B-gs-6s1" secondAttribute="trailing" constant="8" id="WtK-tH-c5E"/>
+                            <constraint firstAttribute="trailing" secondItem="b6B-gs-6s1" secondAttribute="trailing" constant="8" id="Zuh-qB-Nfo"/>
+                            <constraint firstAttribute="bottom" secondItem="Drc-wZ-7dV" secondAttribute="bottom" id="qEU-3K-qi9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="n2W-68-8p9" secondAttribute="trailing" id="40h-11-ZBI"/>
+                <constraint firstItem="n2W-68-8p9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BJ0-T7-wfw"/>
+                <constraint firstItem="n2W-68-8p9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ub3-Qt-STu"/>
+                <constraint firstAttribute="bottom" secondItem="n2W-68-8p9" secondAttribute="bottom" id="yaK-eg-La3"/>
+            </constraints>
+            <size key="customSize" width="92" height="110"/>
+            <connections>
+                <outlet property="pokiImage" destination="b6B-gs-6s1" id="ZRA-bx-Leu"/>
+                <outlet property="pokiName" destination="Drc-wZ-7dV" id="tyD-dW-UTo"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
