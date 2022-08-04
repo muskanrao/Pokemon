@@ -4,7 +4,8 @@
 # About
 * It is an API based app.
 * The first view displays all pokemons.
-* When click on particular pokemon the next will display all details their total attack , defence , weight and height.
+* All pokemon details are fetched from Api and displayed using collection view.
+* When selecting a particular pokemon the next view will display all the pokemon details such as its description , name , height , weight etc. 
 
 # Screenshots
 
