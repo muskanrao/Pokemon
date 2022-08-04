@@ -25,13 +25,13 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-wZ-7dV">
                                 <rect key="frame" x="0.0" y="85" width="128" height="43"/>
-                                <color key="backgroundColor" red="0.96470588450000005" green="0.8156862855" blue="0.87450981139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.26274509800000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.79868197278911568" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b6B-gs-6s1" firstAttribute="top" secondItem="n2W-68-8p9" secondAttribute="top" constant="8" id="0gd-7g-oqy"/>
                             <constraint firstItem="b6B-gs-6s1" firstAttribute="leading" secondItem="n2W-68-8p9" secondAttribute="leading" constant="8" id="3PC-Zx-wzw"/>

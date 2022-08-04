@@ -45,7 +45,7 @@ class PokiCollectionViewCell: UICollectionViewCell {
         didSet{
             print(pokemon?.imageUrl)
             pokiImage.image = pokemon?.image
-            pokiName.text = pokemon?.name
+            pokiName.text = pokemon?.name?.capitalized
         }
     }
     
