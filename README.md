@@ -3,7 +3,7 @@
 
 # About
 * It is an API based app.
-* The first view displays all pokemons
+* The first view displays all pokemons.
 * When click on particular pokemon the next will display all details their total attack , defence , weight and height.
 
 # Screenshots
@@ -14,6 +14,11 @@
 # Language
 * Swift
 
-# Stack
-* Xcode
+## FrontEnd
 * API
+## Backend
+* The backend data for pokemon details are fetched from Api.
+
+# Tools
+* Xcode
+
